@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n1 = Number(prompt('Digite um número: '))
+        var n2 = Number(prompt('Digite outro número: '))
+        var s = n1 + n2
+        var salário = 1345.6
+        //document.write(`O resultado da soma entre ${n1} e ${n2} é ${s}`) 
+
+        var name = prompt('Qual se nome? ')
+        document.write(`Olá ${name}. O resultado da soma entre ${n1} e ${n2} é ${s}!!!</br>`)
+        document.write(`${name.toUpperCase()} veja, seu nome está em letras maiúsculas!!</br>`)
+        document.write(`${name.toLowerCase()} veja, agora está em letras minúsculas.</br>`)
+        document.write(`${name} seu salário é ${salário.toFixed(2).replace('.', ',')}, menos que um salário mínimo hahahaha.`)
+        document.write(` Ou também ${salário.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} reais`)
+    </script>
+</body>
+</html>
