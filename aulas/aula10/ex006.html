@@ -23,12 +23,17 @@
     <script>
         var a = window.document.getElementById('area')
         a.addEventListener('click', clicar)
+        a.addEventListener('dblclick', clicar2x)
         a.addEventListener('mouseenter', entrar)
         a.addEventListener('mouseout', sair)
 
         function clicar() {
             a.innerText = 'Clicou!'
             a.style.backgroundColor = 'red'
+        }
+        function clicar2x() {
+            a.innerText= 'Clicou 2 vezes!'
+            a.style.backgroundColor = 'purple'
         }
         function entrar() {
             a.innerText = 'Entrou!'
